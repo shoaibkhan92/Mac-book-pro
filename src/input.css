@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-gradient{
+    background: linear-gradient(180deg, #252149 0%, #3D2271 100%);
+
+}
+.bg-img{
+    background-image: url('/img/coines.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    border-radius: 20px;
+    display: flex;
+    padding: 36px 60px;
+}
+.bg-shape{
+    background-image: url('/img/stars.svg');
+    background-color: #173E3F;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+.hig-600{
+    background-image: url('/img/Girls-glass.png');
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+
+}
