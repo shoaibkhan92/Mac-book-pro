@@ -24,7 +24,7 @@
             <div class="flex items-center justify-between bg-transparent top-0">
                 <a class="" href=""><img src="/img/header.svg" alt=""></a>
                 <div class="side-bar text-base font-medium  block bg-white h-screen w-[280px] md:w-auto p-7 fixed top-0 -right-full transition-all duration-500 ease-in-out md:p-0 md:h-auto md:flex md:max-w-full md:static md:bg-transparent">
-                    <ul class="md:flex items-center text-white">
+                    <ul class="relative md:flex items-center text-white">
                         <li><a href="" class="p-8">Community</a></li>
                         <li><a href="" class="p-8">Products</a></li>
                         <li><a href="" class="p-8">Resources</a></li>
@@ -863,6 +863,21 @@
         </div>
     </div>
 
+
+    <script>
+        document.querySelector('.open-menu').addEventListener('click', function () {
+            console.log("check")
+            document.querySelector('.side-bar').classList.add('active');
+            this.classList.add('active')
+        });
+
+        document.querySelector('.close').addEventListener('click', function () {
+            console.log("check")
+            document.querySelector('.side-bar').classList.remove('active');
+            this.classList.remove('active')
+        })
+
+    </script>
 </body>
 
 </html>
