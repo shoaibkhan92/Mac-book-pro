@@ -9,24 +9,34 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+
+        <style>
+            .active {
+                right: 0 !important;
+            }
+        </style>
 </head>
 
 <body class="font-[Manrope]">
+
     <header class="hidden md:inline-block w-full absolute pt-5">
         <div class="max-w-7xl mx-auto">
             <div class="flex items-center justify-between bg-transparent top-0">
                 <a class="" href=""><img src="/img/header.svg" alt=""></a>
-                <ul class="flex items-center text-white">
-                    <li><a href="" class="p-8">Community</a></li>
-                    <li><a href="" class="p-8">Products</a></li>
-                    <li><a href="" class="p-8">Resources</a></li>
-                    <li><a href="" class="p-8">About Us</a></li>
-                    <li><a href="" class="p-8">Careers</a></li>
-                    <li><a href=""
-                            class="p-8 inline-block px-6 py-3 border rounded-lg hover:border-white hover:bg-white hover:text-red-500">Download
-                            jupiter</a></li>
+                <div class="side-bar text-base font-medium  block bg-white h-screen w-[280px] md:w-auto p-7 fixed top-0 -right-full transition-all duration-500 ease-in-out md:p-0 md:h-auto md:flex md:max-w-full md:static md:bg-transparent">
+                    <ul class="md:flex items-center text-white">
+                        <li><a href="" class="p-8">Community</a></li>
+                        <li><a href="" class="p-8">Products</a></li>
+                        <li><a href="" class="p-8">Resources</a></li>
+                        <li><a href="" class="p-8">About Us</a></li>
+                        <li><a href="" class="p-8">Careers</a></li>
+                        <li><a href="" class="p-8 inline-block px-6 py-3 border rounded-lg hover:border-white hover:bg-white hover:text-red-500">Download jupiter</a></li>
+                        <li class="md:hidden absolute -top-3 -right-3"><button class="close"><img src="/img/close.png"width="20" height="20" alt="menu"></button></li>
+                    </ul>
+                </div>
+                <button class="md:hidden open-menu"><img src="/img/hamburger.png" width="20" height="20"
+                    alt="menu"></button>
             </div>
-            </ul>
         </div>
     </header>
     <div class="bg-[#241642] bg-center bg-cover bg-no-repeat w-full
@@ -35,14 +45,19 @@
             <div class="flex flex-col flex-col-reverse md:flex-row items-center">
                 <div class="text-white text-center w-full md:w-1/2 mt-12 md:mt-0">
                     <p class="text-[#F1F4F9] text-xl md:text-2xl font-bold md:font-medium mb-2 md:mb-0">Jupiter Pro</p>
-                    <h1 class="text-3xl	md:text-[50px] md:leading-[80px] font-extrabold">A pro Salary <br>account for a pro</h1>
+                    <h1 class="text-3xl	md:text-[50px] md:leading-[80px] font-extrabold">A pro Salary <br>account for a
+                        pro</h1>
                 </div>
                 <div class="w-full md:w-1/2 relative">
                     <img class="w-[303px] md:w-full" src="/img/main.png" alt="">
-                    <img class="w-1/3 md:w-[186px] absolute top-7 md:top-[126px] -left-2.5 md:-left-[52px]" src="/img/hi-tag.webp" alt="">
-                    <img class="w-1/3 md:w-[186px] absolute -top-[66px] md:-top-[74px] left-[180px] md:left-[250px]" src="/img/rewards-tag.webp" alt="">
-                    <img class="w-1/3 md:w-[231px] absolute top-[84px] md:top-[72px] right-[30px] md:-right-12 " src="/img/mini-loans.webp" alt="">
-                    <img class="w-3/5 md:w-[515px] absolute -bottom-[18px] md:-bottom-[72px] left-16" src="/img/Group 5930.png" alt="">
+                    <img class="w-1/3 md:w-[186px] absolute top-7 md:top-[126px] -left-2.5 md:-left-[52px]"
+                        src="/img/hi-tag.webp" alt="">
+                    <img class="w-1/3 md:w-[186px] absolute -top-[66px] md:-top-[74px] left-[180px] md:left-[250px]"
+                        src="/img/rewards-tag.webp" alt="">
+                    <img class="w-1/3 md:w-[231px] absolute top-[84px] md:top-[72px] right-[30px] md:-right-12 "
+                        src="/img/mini-loans.webp" alt="">
+                    <img class="w-3/5 md:w-[515px] absolute -bottom-[18px] md:-bottom-[72px] left-16"
+                        src="/img/Group 5930.png" alt="">
                 </div>
             </div>
         </div>
@@ -60,7 +75,8 @@
                     <div class="md:text-left">
                         <h3 class="text-3xl md:text-5xl	md:leading-[54px] font-bold mb-2.5">Free health <br>
                             insurance </h3>
-                        <p class="max-w-[218px] md:max-w-[345px] text-base md:text-2xl font-normal">Get a free health cover of
+                        <p class="max-w-[218px] md:max-w-[345px] text-base md:text-2xl font-normal">Get a free health
+                            cover of
                             ₹2 Lakh with cashless coverage at 5000+ network hospitals. You
                             don't have to worry about
                             paying for medical expenses</p>
@@ -68,8 +84,10 @@
                 </div>
                 <div class="flex flex-col flex-col-reverse md:flex-row items-center  justify-center mb-14">
                     <div class="md:text-left md:pr-16">
-                        <h3 class="text-3xl md:text-5xl	md:leading-[54px] font-bold mb-4">Loans that work <br>for you</h3>
-                        <p class="max-w-[230px] md:max-w-[345px] text-base md:text-2xl font-normal">Get a <span class="font-bold">Mini Loan</span> at
+                        <h3 class="text-3xl md:text-5xl	md:leading-[54px] font-bold mb-4">Loans that work <br>for you
+                        </h3>
+                        <p class="max-w-[230px] md:max-w-[345px] text-base md:text-2xl font-normal">Get a <span
+                                class="font-bold">Mini Loan</span> at
                             0% interest for up to 45 days or a <span class="font-bold">Personal Loan</span> of up to
                             ₹5,00,000 with 3-12 EMIs</p>
                     </div>
@@ -83,8 +101,10 @@
                     <img class="w-[364px]" src="/img/mobile3.png" alt="">
                 </div>
                 <div class="md:text-left">
-                    <h3 class="text-3xl md:text-5xl	md:leading-[54px] font-bold mb-2.5">(More) Rewards on <br>your spends</h3>
-                    <p class="max-w-[262px] md:max-w-[345px] text-base md:text-2xl font-normal">Earn 1% rewards up to Rs. 600 every month on all Debit
+                    <h3 class="text-3xl md:text-5xl	md:leading-[54px] font-bold mb-2.5">(More) Rewards on <br>your
+                        spends</h3>
+                    <p class="max-w-[262px] md:max-w-[345px] text-base md:text-2xl font-normal">Earn 1% rewards up to
+                        Rs. 600 every month on all Debit
                         Card & select UPI spends. Your rewards never expire</p>
                 </div>
             </div>
@@ -218,9 +238,11 @@
                         <p class="text-lg leading-[22px] font-bold text-left text-white">Recommended for HRs</p>
                     </div>
                 </div>
-                <div class="md:w-1/2 bg-white rounded-[10px] md:rounded-tl-none md:rounded-tr-[15px] md:rounded-bl-none md:rounded-br-[15px] p-8">
+                <div
+                    class="md:w-1/2 bg-white rounded-[10px] md:rounded-tl-none md:rounded-tr-[15px] md:rounded-bl-none md:rounded-br-[15px] p-8">
                     <div class="btn mb-4 md:mb-10 md:mt-10">
-                        <button class="bg-[#FC7A69] md:w-48 p-3.5 text-white text-sm md:text-xl font-bold rounded-l-full">For
+                        <button
+                            class="bg-[#FC7A69] md:w-48 p-3.5 text-white text-sm md:text-xl font-bold rounded-l-full">For
                             employers</button>
 
                         <button
@@ -261,21 +283,25 @@
 
     <div class="py-6 md:py-14 bg-[#F9F9F9]">
         <div class="max-w-7xl mx-auto text-center p-4">
-            <h3 class="text-4xl md:text-5xl md:leading-[65px] font-bold mb-3 md:mb-5">It keeps getting better and better</h3>
+            <h3 class="text-4xl md:text-5xl md:leading-[65px] font-bold mb-3 md:mb-5">It keeps getting better and better
+            </h3>
             <p class="text-xl md:text-2xl font-normal mb-5">Read on to discover more salary account benefits</p>
             <div class="md:flex justify-center mb-6">
                 <div class="md:w-3/5 h-auto bg-white rounded-3xl text-center p-5 md:p-[70px] mb-4 md:mb-0">
                     <div class="flex items-end mb-1">
                         <img class="w-1/2 md:w-auto z-10" src="/img/Emergency-icon.png" alt="">
                         <div class="bg-white h-auto rounded-xl shadow-xl -ml-[8px] md:-ml-[20px] mb-9">
-                            <p class="text-xs md:text-2xl md:leading-[30px]  md:font-medium p-2 md:p-7">Added: ₹78000 to your <br>Emergency Pot
+                            <p class="text-xs md:text-2xl md:leading-[30px]  md:font-medium p-2 md:p-7">Added: ₹78000 to
+                                your <br>Emergency Pot
                             </p>
                         </div>
                     </div>
                     <div>
-                        <h2 class="text-5xl md:text-6xl md:leading-[64px] font-bold text-left mb-6">Pots: an easy way <br>to save for
+                        <h2 class="text-5xl md:text-6xl md:leading-[64px] font-bold text-left mb-6">Pots: an easy way
+                            <br>to save for
                             your <br>goals</h2>
-                        <p class="text-left text-xl md:text-2xl font-normal">Whether you want the latest iPhone, or <br> are
+                        <p class="text-left text-xl md:text-2xl font-normal">Whether you want the latest iPhone, or <br>
+                            are
                             planning a holiday ,save for all your
                             <br>goals in Pots
                         </p>
@@ -284,9 +310,11 @@
                 <div class="relative md:w-2/5 h-auto bg-white rounded-3xl text-center p-12 md:ml-6">
                     <img class="w-full absolute top-16 md:top-0 left-0 pt-16" src="/img/Layer.png" alt="">
                     <img class="relative inline-block md:w-[188px] mb-7 pt-16" src="/img/All-bank-logo.png" alt="">
-                    <h2 class="text-6xl leading-[64px] font-bold text-left mb-[72px]">One UPI. For all your bank
+                    <h2 class="text-5xl md:text-6xl md:leading-[64px] font-bold text-left md:mb-[72px] mb-7">One UPI.
+                        For all your bank
                         accounts</h2>
-                    <p class="text-left text-2xl font-normal">Link all your bank accounts <br>in an instant. Scan & Pay
+                    <p class="text-xl md:text-2xl text-left font-normal">Link all your bank accounts <br>in an instant.
+                        Scan & Pay
                         <br>easily
                     </p>
                 </div>
@@ -304,7 +332,8 @@
                             spends auto-<br>categorised and take control of your <br>finances</p>
                     </div>
                     <div class="w-1/2">
-                        <div class="bg-white rounded-[20px] max-w-[300px] h-auto flex p-5 items-center mb-2.5	shadow-[#00000026]  top-[170px] right-[316px] text-left">
+                        <div
+                            class="bg-white rounded-[20px] max-w-[300px] h-auto flex p-5 items-center mb-2.5	shadow-[#00000026]  top-[170px] right-[316px] text-left">
                             <img src="/img/cone.png" alt="">
                             <p class="pl-3.5 text-lg leading-5 font-normal">You got ₹12,640 more to spend this month</p>
                         </div>
@@ -373,25 +402,29 @@
                 </div>
             </div>
             <div>
-                <div class="flex justify-center mb-14">
-                    <div class="w-1/2 bg-white rounded-xl text-center p-[50px]">
+                <div class="md:flex justify-center mb-14">
+                    <div class="md:w-1/2 bg-white rounded-xl text-center p-[50px] mb-6 md:mb-0">
                         <div>
-                            <img class="inline-block" src="/img/dubble-card.png" alt="">
+                            <img class="inline-block mb-5 md:mb-0" src="/img/dubble-card.png" alt="">
                         </div>
                         <div>
-                            <h2 class="font-bold text-6xl leading-[64px] text-left pl-9 mb-2.5">Free (gorgeous) Debit
+                            <h2 class="text-2xl md:text-6xl md:leading-[64px] font-bold  text-left md:pl-9 mb-2.5">Free
+                                (gorgeous) Debit
                                 Card</h2>
-                            <p class="text-2xl font-normal text-left pl-9">Freeze or unfreeze, set spend limits or put
+                            <p class="text-xl md:text-2xl font-normal text-left md:pl-9">Freeze or unfreeze, set spend
+                                limits or put
                                 you card to sleep with a tap</p>
                         </div>
                     </div>
-                    <div class="w-1/2 bg-white rounded-xl text-center p-[50px] ml-5">
+                    <div class="md:w-1/2 bg-white rounded-xl text-center p-6 md:p-[50px] md:ml-5">
                         <div>
                             <img class="inline-block" src="/img/j-img.png " alt="">
                         </div>
                         <div
-                            class="bg-[#DDF5F5] w-full rounded-tl-[1.27px] rounded-tr-[25.39px] rounded-br-[25.39px] rounded-bl-[25.39px] shadow-[0px_3.81px_5.08px_0px_#00000026]">
-                            <p class="text-left p-6 mt-2.5 text-[19px] leading-[26px] font-medium mb-[120px]">Hey, it’s
+                            class="bg-[#DDF5F5] md:w-full rounded-tl-[1.27px] rounded-tr-[25.39px] rounded-br-[25.39px] rounded-bl-[25.39px] shadow-[0px_3.81px_5.08px_0px_#00000026]">
+                            <p
+                                class="text-left p-3 md:p-6 mt-2.5 text-xs md:text-[19px] md:leading-[26px] font-medium mb-6 md:mb-[120px]">
+                                Hey, it’s
                                 a quick toggle to keep your card safe. All Transactions will be disabled when <br>you
                                 put your card on sleep.
                                 <br>Cool aye?
@@ -399,8 +432,10 @@
                         </div>
 
                         <div>
-                            <h2 class="font-bold text-6xl leading-[64px] text-left mb-2.5">Lightning fast Support!</h2>
-                            <p class="text-2xl font-normal text-left">Chat with us for help with your queries. We're
+                            <h2 class="font-bold text-4xl md:text-6xl md:leading-[64px] text-left mb-2.5">Lightning fast
+                                Support!</h2>
+                            <p class="text-xl md:text-2xl font-normal text-left">Chat with us for help with your
+                                queries. We're
                                 available 24X7</p>
                         </div>
                     </div>
@@ -441,7 +476,7 @@
     </div>
 
     <div class="py-10 bg-white">
-        <div class="max-w-7xl mx-auto text-center">
+        <div class="max-w-7xl mx-auto text-center p-4">
             <h2 class="text-[40px] leading-[46px] font-bold mb-6">Frequently asked <br>questions</h2>
 
             <div id="faq" class="max-w-[700px] mx-auto cursor-pointer">
@@ -530,36 +565,42 @@
 
     <div class="pt-14">
         <div class="bg-shape">
-            <div class="max-w-7xl mx-auto text-center">
+            <div class="max-w-7xl mx-auto text-center p-4">
                 <div>
                     <h3 class="text-3xl	font-semibold mb-16 text-white">More from jupiter</h3>
                 </div>
 
-                <div class="flex">
+                <div class="md:flex">
                     <div
-                        class="bg-[#F9F9F9] w-1/2 shadow-[0px_0px_10px_0px_#00000026] rounded-[10px] py-10 px-[30px] relative">
-                        <div class="mt-[28px]">
-                            <h4 class="text-left text-2xl leading-6 font-semibold mb-2.5">Co-created community
-                            </h4>
-                            <p class="text-left">
-                                We’re building Jupiter hand-in-hand with users like you. Envision the bank you would
-                                want to be a part of.
-                            </p>
-                            <img class="absolute top-[15px] right-[15px]" src="/img/footer-astronauts.svg" alt="">
+                        class="bg-[#F9F9F9] md:w-1/2 shadow-[0px_0px_10px_0px_#00000026] rounded-[10px] p-3 md:py-10 md:px-[30px] md:relative mb-7 md:mb-0">
+                        <div class="md:mt-[28px] flex flex-row flex-row-reverse">
+                            <div class="ml-3 md:ml-0">
+                                <h4 class="text-left text-lg md:leading-6 font-semibold mb-2.5">Co-created community
+                                </h4>
+                                <p class="text-left text-base">
+                                    We’re building Jupiter hand-in-hand with users like you. Envision the bank you would
+                                    want to be a part of.
+                                </p>
+                            </div>
+                            <img class="md:absolute top-[15px] right-[15px] w-14" src="/img/footer-astronauts.svg"
+                                alt="">
                         </div>
                     </div>
 
                     <div
-                        class="bg-black relative w-1/2 shadow-[0px_0px_10px_0px_#00000026] rounded-[10px] py-10 px-[30px] ml-5 ">
-                        <div class="mt-[28px]">
-                            <h4 class="text-left text-white text-2xl leading-6 font-semibold mb-2.5">
-                                Demystifying your money
-                            </h4>
-                            <p class="text-left text-white">
-                                Fun filled insights from FinForAll by Jupiter helps you make smarter financial
-                                decisons
-                            </p>
-                            <img class="absolute top-[15px] right-[15px]" src="/img/finforall.svg" alt="">
+                        class="bg-black md:relative md:w-1/2 shadow-[0px_0px_10px_0px_#00000026] rounded-[10px] p-3 md:py-10 md:px-[30px] md:ml-5">
+                        <div class="md:mt-[28px] flex flex-row flex-row-reverse">
+                            <div class="ml-3 md:ml-0">
+                                <h4 class="text-left text-white text-lg md:text-2xl md:leading-6 font-semibold mb-2.5">
+                                    Demystifying your money
+                                </h4>
+                                <p class="text-left text-white">
+                                    Fun filled insights from FinForAll by Jupiter helps you make smarter financial
+                                    decisons
+                                </p>
+                            </div>
+                            <img class="md:absolute top-[15px] right-[15px] w-14 md:w-auto" src="/img/finforall.svg"
+                                alt="">
                         </div>
                     </div>
                 </div>
@@ -570,23 +611,23 @@
 
     <div class="bg-[#121212]">
         <div id="footer-list">
-            <div class="max-w-7xl mx-auto text-center">
-                <div class="flex justify-center pt-8 gap-5">
+            <div class="max-w-7xl mx-auto text-center p-4">
+                <div class="md:flex justify-center pt-8 md:gap-5">
                     <div
-                        class="relative w-[30%] bg-[#492C82] shadow-[0px_0px_10px_0px_#00000026] rounded-[10px] pt-5 pb-8 px-[36px]">
+                        class="relative md:w-[30%] bg-[#492C82] shadow-[0px_0px_10px_0px_#00000026] rounded-[10px] pt-5 pb-8 px-[36px] mb-6 md:mb-0">
                         <p class="text-base text-white text-left leading-5 font-normal max-w-[196px]">New age banking
                             demands <a class="text-[#F6567D]" href="">transparent terms and conditions</a></p>
                         <img class="absolute -top-[16px] right-[20px]" src="/img/tnc.svg" alt="">
                     </div>
                     <div
-                        class="relative w-[30%] bg-[#333333] shadow-[0px_0px_10px_0px_#00000026] rounded-[10px] pt-5 pb-8 px-[36px]">
+                        class="relative md:w-[30%] bg-[#333333] shadow-[0px_0px_10px_0px_#00000026] rounded-[10px] pt-5 pb-8 px-[36px] mb-6 md:mb-0">
                         <p class="text-base text-white text-left leading-5 font-normal max-w-[178px]">No fine prints on
                             Jupiter. Simple to understand <a class="text-[#F6567D]" href="">
                                 fees and charges.</a></p>
                         <img class="absolute -top-[16px] right-[20px]" src="/img/rupee.svg" alt="">
                     </div>
                     <div
-                        class="relative w-[30%] bg-[#333333] shadow-[0px_0px_10px_0px_#00000026] rounded-[10px] pt-5 pb-8 px-[36px]">
+                        class="relative md:w-[30%] bg-[#333333] shadow-[0px_0px_10px_0px_#00000026] rounded-[10px] pt-5 pb-8 px-[36px] mb-8 md:mb-0">
                         <p
                             class="text-base text-white text-left leading-5 font-normal max-w-[202px] pl-1.5 whitespace-nowrap">
                             Check us out on our
@@ -600,103 +641,107 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex py-[50px] px-0">
-                    <div>
+                <div class="md:flex md:py-[50px] px-0">
+                    <div class="mb-10 md:mb-0">
                         <img class="mb-6" src="/img/jupiter.big.svg" alt="">
 
                         <a href=""><img class="w-[100px] my-4" src="/img/play-store.png" alt=""></a>
 
                         <a href=""><img class="w-[100px] my-4" src="/img/app-store.png" alt=""></a>
                     </div>
-                    <div class="flex justify-between w-full text-white ml-20">
-                        <ul class="mb-4 xl:w-1/5 text-left">
+                    <div class="md:flex justify-between w-full text-white md:ml-20">
+                        <ul class="mb-10 md:mb-4 xl:w-1/5 text-left">
                             <li class="pb-3 text-xs font-semibold opacity-60">ABOUT</li>
 
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">Roadmap</a>
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">Roadmap</a>
                             </li>
 
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">Community</a>
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">Community</a>
                             </li>
 
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">Careers</a></li>
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">Contact Us</a></li>
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">Blogs</a>
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">Careers</a></li>
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">Contact Us</a></li>
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">Blogs</a>
                             </li>
                         </ul>
-                        <ul class="mb-4 xl:w-1/5 text-left">
+                        <ul class="mb-10 md:mb-4 xl:w-1/5 text-left">
                             <li class="pb-3 text-xs font-semibold opacity-60">PRODUCTS</li>
 
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">Jupiter Products</a>
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">Jupiter Products</a>
                             </li>
 
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">Portfolio Analyser</a>
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">Portfolio Analyser</a>
                             </li>
 
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">FinForAll By
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">FinForAll By
                                     Jupiter</a></li>
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">Currency Converter</a></li>
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">Edge Federal Bank <br>Credit
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">Currency Converter</a>
+                            </li>
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">Edge Federal Bank
+                                    <br>Credit
                                     Card</a>
                             </li>
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">Edge CSB Bank <br>Credit
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">Edge CSB Bank <br>Credit
                                     Card</a>
                             </li>
                         </ul>
-                        <ul class="mb-4 xl:w-1/5 text-left">
+                        <ul class="mb-10 md:mb-4 xl:w-1/5 text-left">
                             <li class="pb-3 text-xs font-semibold opacity-60">CALCULATORS</li>
 
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">NPS Calculator</a>
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">NPS Calculator</a>
                             </li>
 
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">EPF Calculator</a>
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">EPF Calculator</a>
                             </li>
 
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">PPF
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">PPF
                                     Calculator</a></li>
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">Salary
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">Salary
                                     Calculator</a></li>
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">more...</a>
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">more...</a>
                             </li>
                         </ul>
-                        <ul class="mb-4 xl:w-1/5 text-left">
+                        <ul class="mb-10 md:mb-4 xl:w-1/5 text-left">
                             <li class="pb-3 text-xs font-semibold opacity-60">RESOURCES</li>
 
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">Financial
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">Financial
                                     Planning</a>
                             </li>
 
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">Investment
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">Investment
                                     Basics</a>
                             </li>
 
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">Digital Banking</a></li>
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">Credit And Loan</a></li>
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">more...</a>
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">Digital Banking</a></li>
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">Credit And Loan</a></li>
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">more...</a>
                             </li>
                         </ul>
-                        <ul class="mb-4 xl:w-1/5 text-left">
+                        <ul class="mb-10 md:mb-4 xl:w-1/5 text-left">
                             <li class="pb-3 text-xs font-semibold opacity-60">USEFUL LINKS</li>
 
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">Terms and Conditions</a>
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">Terms and Conditions</a>
                             </li>
 
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">Privacy Policy</a>
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">Privacy Policy</a>
                             </li>
 
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">Grievance Redressal
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">Grievance Redressal
                                     Policy</a></li>
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">Communication Guidelines</a>
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">Communication
+                                    Guidelines</a>
                             </li>
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">Google API Disclosure</a>
+                            <li class="pb-2 md:py-2 text-sm"><a class="hover:underline" href="">Google API
+                                    Disclosure</a>
                             </li>
-                            <li class="py-2 text-sm"><a class="hover:underline" href="">Pricing and Fees</a>
+                            <li class="md:py-2 text-sm"><a class="hover:underline" href="">Pricing and Fees</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div id="table" class="text-white">
-                <div class="mx-auto z-10 flex justify-center items-center  text-xs py-[3rem] px-4 ">
+                <div class="mx-auto z-10 flex justify-center items-center  text-xs pb-10 md:py-[3rem] px-4 ">
                     <table class="table-auto border-seperate border max-w-2xl">
                         <thead>
                             <tr>
@@ -783,12 +828,12 @@
             </div>
             <img class="w-full static" src="/img/bg_footer.svg" alt="">
             <div class="pt-4 text-center text-white bg-[#FE7465] -mt-px">
-                <div class="max-w-7xl mx-auto text-center">
+                <div class="max-w-7xl mx-auto text-center p-4">
                     <h3 class="text-2xl	font-semibold">We work with trusted partners</h3>
                     <p class="px-4 text-xs font-medium ">Jupiter deploys high level security standards to keep
                         your money safe</p>
-                    <div class="max-w-[900px] mx-auto my-3 text-center bg-white rounded-lg flex">
-                        <div class="flex-1 p-4 border-r">
+                    <div class="max-w-[900px] mx-auto my-3 text-center bg-white rounded-lg md:flex">
+                        <div class="flex-1 p-4 md:border-r border-b">
                             <h5 class="mb-2 text-xs text-left text-[#656565]">SECURITY PARTNERS</h5>
                             <img src="/img/security-partners.svg" alt="">
                         </div>
@@ -798,7 +843,17 @@
                         </div>
                     </div>
                     <p class="pt-4 pb-2 text-xs">
-                        The savings account, bank deposits and cobranded VISA Debit Card are issued by Federal Bank - a scheduled commercial bank. All funds in the account are insured up to approved limits by DICGC. Your Savings Account and bank deposits are hosted by our partner bank and follows all security standards prescribed by the bank/regulator. Co-branded Credit Cards : AFTPL through its brand Jupiter is a marketplace and promotes co-branded cards distributed by Europa Neo Marketing Pvt Ltd in partnership with the following issuers: Federal Bank and CSB Bank. Approval of your credit card application is subject to issuer banks eligibility criteria. 'Jupiter' itself is not a bank and doesn't hold or claim to hold a banking license. Your money is always safe with our partner bank. Amica Investment Advisers Private Limited, is a SEBI registered Investment Adviser - INA000015507. Mutual Funds investments are subject to market risks, read all scheme related documents carefully. Past performance is not an indicator for future returns.
+                        The savings account, bank deposits and cobranded VISA Debit Card are issued by Federal Bank - a
+                        scheduled commercial bank. All funds in the account are insured up to approved limits by DICGC.
+                        Your Savings Account and bank deposits are hosted by our partner bank and follows all security
+                        standards prescribed by the bank/regulator. Co-branded Credit Cards : AFTPL through its brand
+                        Jupiter is a marketplace and promotes co-branded cards distributed by Europa Neo Marketing Pvt
+                        Ltd in partnership with the following issuers: Federal Bank and CSB Bank. Approval of your
+                        credit card application is subject to issuer banks eligibility criteria. 'Jupiter' itself is not
+                        a bank and doesn't hold or claim to hold a banking license. Your money is always safe with our
+                        partner bank. Amica Investment Advisers Private Limited, is a SEBI registered Investment Adviser
+                        - INA000015507. Mutual Funds investments are subject to market risks, read all scheme related
+                        documents carefully. Past performance is not an indicator for future returns.
                     </p>
                     <p class="pt-4 pb-2 text-xs">
                         © Amica Financial Technologies Private Limited. <span>2024</span>
