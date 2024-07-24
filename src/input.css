@@ -35,5 +35,7 @@
     width: 100%;
     height: auto;
     margin-bottom: 20px;
-
+}
+.active {
+    right: 0 !important;
 }
