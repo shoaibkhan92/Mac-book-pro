@@ -13,24 +13,34 @@
 
 <body class="font-[Manrope]">
 
-    <!-- <header class="hidden md:inline-block w-full absolute pt-5"> -->
-    <header class="bg">
+    <header class="md:inline-block w-full absolute">
         <div class="max-w-7xl mx-auto">
-            <div class="nav flex items-center justify-between p-3">
+            <div class="flex items-center justify-between p-3 md:p-0">
                 <a class="" href=""><img src="/img/header.svg" alt=""></a>
-                <div class="side-bar text-base font-medium  block bg-white h-screen w-[280px] md:w-auto p-7 fixed top-0 -right-full transition-all duration-500 ease-in-out md:p-0 md:h-auto md:flex md:max-w-full md:static md:bg-transparent">
-                    <ul class="relative md:flex items-center text-white">
-                        <li><a href="" class="p-8">Community</a></li>
-                        <li><a href="" class="p-8">Products</a></li>
-                        <li><a href="" class="p-8">Resources</a></li>
-                        <li><a href="" class="p-8">About Us</a></li>
-                        <li><a href="" class="p-8">Careers</a></li>
-                        <li><a href="" class="p-8 inline-block px-6 py-3 border rounded-lg hover:border-white hover:bg-white hover:text-red-500">Download jupiter</a></li>
-                        <li class="md:hidden absolute -top-3 -right-3"><button class="close"><img src="/img/close.png" width="20" height="20" alt="menu"></button></li>
+                <div
+                    class="side-bar text-base font-medium  block z-50 bg-white h-screen w-full md:w-auto  fixed top-0 -right-full transition-all duration-500 ease-in-out md:p-0 md:h-auto md:flex md:max-w-full md:static md:bg-transparent">
+                    <ul class="md:flex items-center md:text-white mt-16 md:mt-0">
+                        <li><a href="" class="px-4 pb-5 md:p-8 inline-block">Community</a></li>
+                        <li><a href="" class="px-4 pb-5 md:p-8 inline-block">Products</a></li>
+                        <li><a href="" class="px-4 pb-5 md:p-8 inline-block">Resources</a></li>
+                        <li><a href="" class="px-4 pb-5 md:p-8 inline-block">About Us</a></li>
+                        <li><a href="" class="px-4 pb-5 md:p-8 inline-block">Careers</a></li>
+                        <li><a href=""
+                                class="hidden md:inline-block px-6 py-3 border rounded-lg hover:border-white hover:bg-white hover:text-red-500">Download 
+                                jupiter</a></li>
+                        <div>
+                            <li class="md:hidden absolute top-5 right-5"><button class="close"><img src="/img/close.png"
+                                width="20" height="20" alt="menu"></button></li>
+                        </div>
                     </ul>
                 </div>
-                <button class="md:hidden open-menu"><img src="/img/hamburger.png" width="20" height="20"
-                    alt="menu"></button>
+                <a href=""
+                    class="md:hidden inline-block px-3.5 py-2 border rounded-lg hover:border-white hover:bg-white hover:text-red-500 text-white">Download
+                    jupiter</a>
+                <button class="md:hidden open-menu"><svg class="fill-white" width="32" height="32"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"></path>
+                    </svg></button>
             </div>
         </div>
     </header>
@@ -121,15 +131,15 @@
     </div>
 
     <div class="py-14 bg-white">
-        <div class="max-w-7xl mx-auto text-center">
+        <div class="max-w-7xl mx-auto text-center p-4ggg">
             <div>
-                <h3 class="text-5xl leading-[54px] font-bold mb-4">There's Jupiter Pro.
+                <h3 class="text-3xl md:text-5xl md:leading-[54px] font-bold mb-4">There's Jupiter Pro.
                     <br>And then there are others...
                 </h3>
-                <p class="font-normal text-2xl mb-16">Compare Jupiter Pro Salary account with your current salary
+                <p class="text-lg md:text-2xl font-normal md:mb-16">Compare Jupiter Pro Salary account with your current salary
                     account</p>
             </div>
-            <div class="md:flex justify-center items-end p-4">
+            <div class="md:flex justify-center items-end">
                 <div class="py-4">
                     <div
                         class="md:w-[240px] font-normal text-sm border border-[#DDDDDD] rounded-tl-[10px] rounded-bl-[10px] overflow-hidden py-8 text-left bg-white -mr-2">
@@ -295,7 +305,8 @@
                     <div>
                         <h2 class="text-5xl md:text-6xl md:leading-[64px] font-bold text-left mb-6">Pots: an easy way
                             <br>to save for
-                            your <br>goals</h2>
+                            your <br>goals
+                        </h2>
                         <p class="text-left text-xl md:text-2xl font-normal">Whether you want the latest iPhone, or <br>
                             are
                             planning a holiday ,save for all your
@@ -316,27 +327,27 @@
                 </div>
             </div>
 
-            <div class="hig-600">
+            <div class="bg-[url('/img/Girls-glass.png')] bg-no-repeat bg-contain bg-top bg-white rounded-xl md:bg-cover md:bg-center md:py-[50px] md:rounded-[20px] w-full h-auto mb-5">
                 <div class="">
                 </div>
-                <div class="flex py-7 px-[68px]">
-                    <div class="w-1/2 text-left">
-                        <h3 class="font-bold text-6xl leading-[58px] text-white mb-4">Insights: a
+                <div class="flex flex-col flex-col-reverse md:flex-row md:py-7 md:px-[68px]">
+                    <div class="md:w-1/2 text-left pl-5 pt-[78px] md:pt-0">
+                        <h3 class="text-2xl md:text-6xl md:leading-[58px] font-bold md:text-white mb-4">Insights: a
                             <br>breakdown of <br>your money
                         </h3>
-                        <p class="text-2xl font-normal text-white text bottom-[216px]">Have your incomes &
+                        <p class="text-base md:text-2xl font-normal md:text-white text bottom-[216px]">Have your incomes &
                             spends auto-<br>categorised and take control of your <br>finances</p>
                     </div>
-                    <div class="w-1/2">
+                    <div class="md:w-1/2 pt-[44px] md:pt-0 pl-[52px] md:pl-0">
                         <div
-                            class="bg-white rounded-[20px] max-w-[300px] h-auto flex p-5 items-center mb-2.5	shadow-[#00000026]  top-[170px] right-[316px] text-left">
+                            class="bg-white rounded-xl md:rounded-[20px] max-w-[212px] md:max-w-[300px] h-auto flex p-2 md:p-5 items-center md:mb-2.5 shadow-[#00000026]  top-[170px] right-[316px] text-left">
                             <img src="/img/cone.png" alt="">
-                            <p class="pl-3.5 text-lg leading-5 font-normal">You got ₹12,640 more to spend this month</p>
+                            <p class="text-sm md:text-lg md:leading-5 font-normal pl-1.5">You got ₹12,640 more to spend this month</p>
                         </div>
                         <div
-                            class="bg-white rounded-[20px] max-w-[300px] h-auto pt-5 px-5 pb-2.5 shadow-[#00000026]  top-[260px] right-[316px] text-left">
+                            class="hidden md:block bg-white rounded-[20px] max-w-[300px] h-auto pt-5 px-5 pb-2.5 shadow-[#00000026]  top-[260px] right-[316px] text-left">
                             <div>
-                                <div class="flex  mb-1">
+                                <div class="flex mb-1">
                                     <img class="w-7 h-7" src="/img/helth.png" alt="">
                                     <div class="pl-2.5">
                                         <p class="text-xs font-normal -mb-2">Health & fitness</p>
@@ -437,31 +448,31 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-img">
+            <div class="bg-[url('/img/coines.png')] bg-no-repeat bg-contain bg-top bg-white rounded-xl md:bg-cover md:bg-center md:py-9 md:px[60px] w-full h-auto">
                 <div class="flex w-full justify-end">
-                    <div class="flex my-[50px] mx-[36px]">
-                        <div>
-                            <div class="flex  text-left">
+                    <div class="flex md:my-[50px] md:mx-[36px]">
+                        <div class="pt-[164px] pt-0 px-3 md:px-0">
+                            <div class="flex text-left">
                                 <img class="w-[58px] h-[70px]" src="/img/shake-hand (1).png" alt="">
-                                <div class="ml-4">
-                                    <h3 class="text-[26px] leading-[44px] font-bold">Max Trust</h3>
-                                    <p class="text-xl font-normal mb-5">We host your account in an RBI-licensed <br>bank
+                                <div class="ml-2 md:ml-4">
+                                    <h3 class="text-xl md:text-[26px] md:leading-[44px] font-bold">Max Trust</h3>
+                                    <p class="text-base md:text-xl font-normal mb-12 md:mb-5">We host your account in an RBI-licensed <br>bank
                                     </p>
                                 </div>
                             </div>
                             <div class="flex text-left">
                                 <img class="w-[58px] h-[70px]" src="/img/private.png" alt="">
-                                <div class="ml-4">
-                                    <h3 class="text-[26px] leading-[44px] font-bold">Max Security</h3>
-                                    <p class="text-xl font-normal mb-5">Which means bank-grade security <br>and ISO and
+                                <div class="ml-2 md:ml-4">
+                                    <h3 class="text-xl md:text-[26px] md:leading-[44px] font-bold">Max Security</h3>
+                                    <p class="text-base md:text-xl font-normal mb-12 md:mb-5">Which means bank-grade security <br>and ISO and
                                         PCI compliant</p>
                                 </div>
                             </div>
                             <div class="flex items-center text-left">
-                                <img class="" src="/img/right-tick.png" alt="">
-                                <div class="ml-4">
-                                    <h3 class="text-[26px] leading-[44px] font-bold">Max Safety</h3>
-                                    <p class="text-xl font-normal">Your money is insured up to ₹5,00,000</p>
+                                <img class="mb-9 md:mb-0" src="/img/right-tick.png" alt="">
+                                <div class="ml-2 md:ml-4">
+                                    <h3 class="text-xl md:text-[26px] md:leading-[44px] font-bold">Max Safety</h3>
+                                    <p class="text-base md:text-xl font-normal mb-9 md:mb-0">Your money is insured up to ₹5,00,000</p>
                                 </div>
                             </div>
                         </div>
